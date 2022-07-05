@@ -43,6 +43,7 @@ function generate_js {
     -m "$JS_SDK_DIR/src/client/v2/algod/models" \
     -p "$TEMPLATE_DIR/common_config.properties,$TEMPLATE_DIR/parameter_order_overrides.properties"
 
+  echo "NPM INFO LOGS"
   echo $(npm --version)
   echo $(which npm)
   pushd $JS_SDK_DIR
